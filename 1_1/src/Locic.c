@@ -252,9 +252,6 @@ String* setCompControl(String* s)
     if (is_control == -1)
     {
         dprint("just simple controlapply")
-        printString(s);PRINTNEWLINE
-        String* ss = setControl(s);
-        printString(ss);PRINTNEWLINE
         return setControl(s);
     }
 
@@ -435,7 +432,6 @@ String* exe_run_prio_one(String* s){
     
     String* inst_s = getExecPeace(s, 1);
     String* abs_s = translateToabstractSyntax(inst_s);
-    printString(abs_s);PRINTNEWLINE
     Mathdef* mathdef = find_abs_syn(abs_s);
     if (mathdef == 0){
         return s;

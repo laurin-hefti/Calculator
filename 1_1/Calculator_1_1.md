@@ -1,6 +1,10 @@
 # Calculator Verison 1.1
 
-### About the Project
+### About the project in general and futur plans
+
+The future idea is to implement alsow integrating technics.
+
+---
 
 ### Features
 
@@ -17,6 +21,10 @@ Operations:
 Locic:
 
 - Pointoperation before Lineoperations
+
+
+Note:
+Not included are negativ numbers.
 
 ---
 
@@ -63,3 +71,14 @@ this would result in 10.
 | run:        | the next line will be executed as a calculation|
 | runTests    | runs all tests to check if the programm is correctly working|
 | runexeTest  | runs a calculation test to check if the calculationpart is working|
+
+---
+
+### About the structur and the project
+
+The Project includs two parts. The one part is the string libary and the other one the calculator. The calculator will be split in multiple parts later but for now it is more comfortable to have everything in one file.
+
+The program works everytime with strings. Because the stringlibrary is working on the heap, the work with the stringlibary does not make it very efficient. But this is not the target of the project to make it very efficient. That would something be for the numerical integration but this is futur stuff.
+
+Why always strings?
+I beleve that strings are easier when it comes to the mor complicated stuff. The normal way how one would do it today would be to translate the stirng into objects and then build a reverse tree to solve the math problem. But especialy when it comes to calculating with variales I thinks it will be much more difficult to handel all this stuff, especialy when the tree changes because of mathematical optimisations. But I don't know if it is realy easier. A first aproach with creating the problem in objects, can be found on my [Github](https://github.com/laurin-hefti/test-ef5/blob/main/Calcpy). 
